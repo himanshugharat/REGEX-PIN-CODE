@@ -2,8 +2,8 @@
 shopt -s extglob
 pinCode=0
 function validatePinCode() {
-	local pin=$1
-	local regexPattern="^[1-9]{1}[0-9]{5}"
+	pin=$1
+	regexPattern="^[1-9]{1}[0-9]{5}$"
 	if [[ $pin =~ $regexPattern ]]
 	then
 		echo "Valid"
